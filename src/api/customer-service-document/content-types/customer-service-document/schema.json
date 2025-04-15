@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customer_service_documents",
+  "info": {
+    "singularName": "customer-service-document",
+    "pluralName": "customer-service-documents",
+    "displayName": "Customer Service Document",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Content": {
+      "type": "blocks"
+    },
+    "Slug": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Title": {
+      "type": "string"
+    }
+  }
+}
